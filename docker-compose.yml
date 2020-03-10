@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  instance_1:
+    image: hrs-docker:latest
+    ports:
+      - "8081:8081"
+
+  instance_2:
+    image: hrs-docker:latest
+    ports:
+        - "8082:8081"
+
+  instance_3:
+    image: hrs-docker:latest
+    ports:
+        - "8083:8081"
