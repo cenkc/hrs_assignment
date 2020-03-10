@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9c3ea3b-4bd2-4b03-b206-97a11ce0b7ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/CurrencyLayerApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/CurrencyLayerApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/controller/CurrencyConverterControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/controller/CurrencyConverterControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/controller/VatLookupControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/controller/VatLookupControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cenkc/hrs/beassignment/controller/CurrencyConverterControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cenkc/hrs/beassignment/controller/CurrencyConverterControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cenkc/hrs/beassignment/controller/VatLookupControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cenkc/hrs/beassignment/controller/VatLookupControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/CurrencyLayerApiTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/currency/ConverterLookupServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/currency/ConverterLookupServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/time/CurrentTimeServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/time/CurrentTimeServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cenkc/hrs/beassignment/CurrencyLayerApiTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cenkc/hrs/beassignment/service/time/CurrentTimeServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cenkc/hrs/beassignment/service/time/CurrentTimeServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cenkc/hrs/beassignment/service/vat/VatValidatorServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cenkc/hrs/beassignment/service/vat/VatValidatorServiceImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,12 +23,21 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/currency/ConverterLookupServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/time/CurrentTimeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <caret line="57" column="134" lean-forward="true" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="134" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,19 +46,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/config/RestTemplateConfigTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/util/SystemConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="11" column="92" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/BeAssignmentApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/currency/ConverterLookupServiceImplTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/time/CurrentTimeServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,6 +125,8 @@
       <find>objectMapper</find>
       <find>ACCESS_RESTRICTED_ERR_CODE</find>
       <find>endpointLive</find>
+      <find>RunWith</find>
+      <find>vatLookup</find>
     </findStrings>
     <replaceStrings>
       <replace>created by cenkc on 3/9/2020</replace>
@@ -129,13 +173,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/model/VatValidatorServiceResponseBean.java" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/time/CurrentTimeServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/CurrencyLayerApiTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/controller/VatLookupControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/controller/CurrentTimeControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/controller/CurrencyConverterControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/currency/ConverterLookupServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/time/CurrentTimeServiceImplTest.java" />
       </list>
     </option>
   </component>
@@ -147,9 +191,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1987" />
-    <option name="width" value="1853" />
-    <option name="height" value="810" />
+    <option name="x" value="1920" />
+    <option name="y" value="-2" />
+    <option name="width" value="1920" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -199,7 +244,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="beassignment" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="be-assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrs_assignment-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beassignment" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="be-assignment" type="b2602c69:ProjectViewProjectNode" />
@@ -209,7 +263,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="beassignment" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="currency" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="be-assignment" type="b2602c69:ProjectViewProjectNode" />
@@ -230,6 +283,22 @@
               <item name="beassignment" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="vat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="be-assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrs_assignment-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beassignment" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="be-assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrs_assignment-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="be-assignment" type="b2602c69:ProjectViewProjectNode" />
@@ -289,6 +358,26 @@
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="currency" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="be-assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrs_assignment-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beassignment" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="time" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="be-assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrs_assignment-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="beassignment" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="vat" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -340,7 +429,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConverterLookupServiceImplTest">
+  <component name="RunManager" selected="JUnit.CurrentTimeServiceImplTest">
     <configuration name="ConverterLookupServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="be-assignment" />
       <extension name="coverage">
@@ -371,21 +460,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CurrencyLayerApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="be-assignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cenkc.hrs.beassignment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cenkc.hrs.beassignment" />
-      <option name="MAIN_CLASS_NAME" value="com.cenkc.hrs.beassignment.CurrencyLayerApiTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CurrentTimeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="be-assignment" />
       <extension name="coverage">
@@ -401,16 +475,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VatLookupControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CurrentTimeServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="be-assignment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cenkc.hrs.beassignment.controller.*" />
+          <option name="PATTERN" value="com.cenkc.hrs.beassignment.service.time.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cenkc.hrs.beassignment.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.cenkc.hrs.beassignment.controller.VatLookupControllerTest" />
+      <option name="PACKAGE_NAME" value="com.cenkc.hrs.beassignment.service.time" />
+      <option name="MAIN_CLASS_NAME" value="com.cenkc.hrs.beassignment.service.time.CurrentTimeServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VatValidatorServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="be-assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cenkc.hrs.beassignment.service.vat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cenkc.hrs.beassignment.service.vat" />
+      <option name="MAIN_CLASS_NAME" value="com.cenkc.hrs.beassignment.service.vat.VatValidatorServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -425,11 +514,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CurrentTimeServiceImplTest" />
+        <item itemvalue="JUnit.VatValidatorServiceImplTest" />
         <item itemvalue="JUnit.ConverterLookupServiceImplTest" />
         <item itemvalue="JUnit.CurrencyConverterControllerTest" />
         <item itemvalue="JUnit.CurrentTimeControllerTest" />
-        <item itemvalue="JUnit.VatLookupControllerTest" />
-        <item itemvalue="JUnit.CurrencyLayerApiTest" />
       </list>
     </recent_temporary>
   </component>
@@ -444,32 +533,11 @@
       <option name="presentableId" value="Default" />
       <updated>1583778217460</updated>
       <workItem from="1583778218767" duration="19701000" />
-      <workItem from="1583800222147" duration="16601000" />
+      <workItem from="1583800222147" duration="24426000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VatLookupControllerTest - 2020.03.10 at 19h 11m 18s.xml">
-      <configuration name="VatLookupControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CurrentTimeControllerTest - 2020.03.10 at 19h 13m 33s.xml">
-      <configuration name="CurrentTimeControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VatLookupControllerTest - 2020.03.10 at 19h 14m 34s.xml">
-      <configuration name="VatLookupControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CurrentTimeControllerTest - 2020.03.10 at 19h 15m 27s.xml">
-      <configuration name="CurrentTimeControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CurrentTimeControllerTest - 2020.03.10 at 19h 16m 12s.xml">
-      <configuration name="CurrentTimeControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CurrentTimeControllerTest - 2020.03.10 at 19h 16m 55s.xml">
-      <configuration name="CurrentTimeControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CurrencyConverterControllerTest - 2020.03.10 at 19h 18m 59s.xml">
-      <configuration name="CurrencyConverterControllerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CurrencyConverterControllerTest - 2020.03.10 at 19h 19m 47s.xml">
       <configuration name="CurrencyConverterControllerTest" configurationId="JUnit" />
     </history-entry>
@@ -479,15 +547,36 @@
     <history-entry file="ConverterLookupServiceImplTest - 2020.03.10 at 19h 29m 01s.xml">
       <configuration name="ConverterLookupServiceImplTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ConverterLookupServiceImplTest - 2020.03.10 at 19h 32m 29s.xml">
+      <configuration name="ConverterLookupServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VatValidatorServiceImplTest - 2020.03.10 at 23h 08m 19s.xml">
+      <configuration name="VatValidatorServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VatValidatorServiceImplTest - 2020.03.10 at 23h 09m 42s.xml">
+      <configuration name="VatValidatorServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VatValidatorServiceImplTest - 2020.03.10 at 23h 12m 54s.xml">
+      <configuration name="VatValidatorServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VatValidatorServiceImplTest - 2020.03.10 at 23h 31m 25s.xml">
+      <configuration name="VatValidatorServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VatValidatorServiceImplTest - 2020.03.10 at 23h 35m 43s.xml">
+      <configuration name="VatValidatorServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CurrentTimeServiceImplTest - 2020.03.10 at 23h 43m 17s.xml">
+      <configuration name="CurrentTimeServiceImplTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36302000" />
+    <option name="totallyTimeSpent" value="44127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22838847" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -498,7 +587,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33892968" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33892968" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,26 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/config/RestTemplateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,75 +773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/time/CurrentTimeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/util/SystemConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="92" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/BeAssignmentApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="356" selection-start-line="356" selection-end-line="356" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/config/JacksonConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/controller/VatLookupController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/model/VatValidatorServiceResponseBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/controller/CurrencyConverterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="47" column="79" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -786,16 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/controller/CurrentTimeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="24" column="50" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/model/CurrentTimeServiceResponseBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -803,67 +797,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="262">
-            <caret line="128" column="20" lean-forward="true" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/time/CurrentTimeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/CurrencyLayerApiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/time/CurrentTimeServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -887,10 +820,133 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="356" selection-start-line="356" selection-end-line="356" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="245">
+            <caret line="127" column="183" selection-start-line="127" selection-start-column="173" selection-end-line="127" selection-end-column="183" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/CurrencyLayerApiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/config/RestTemplateConfigTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/currency/ConverterLookupServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/time/CurrentTimeServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/controller/CurrentTimeControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
+        <state relative-caret-position="441">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/config/JacksonConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/config/RestTemplateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/controller/CurrencyConverterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="79" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/controller/CurrentTimeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/controller/VatLookupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -909,7 +965,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/currency/ConverterLookupServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="459">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -917,17 +973,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/config/RestTemplateConfigTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/time/CurrentTimeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cenkc/hrs/beassignment/service/currency/ConverterLookupServiceImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/time/CurrentTimeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/service/vat/VatValidatorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="57" column="134" lean-forward="true" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="134" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/util/SystemConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="92" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cenkc/hrs/beassignment/BeAssignmentApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>

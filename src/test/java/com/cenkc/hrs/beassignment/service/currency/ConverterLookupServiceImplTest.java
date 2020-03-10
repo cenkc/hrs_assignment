@@ -55,7 +55,7 @@ class ConverterLookupServiceImplTest {
 
     @Test
     void givenRestTemplate_whenRequestedConverterApi_thenFail() {
-        // Since FREE Subscription Plan does not support '/convert' endpoint, api call should fail
+        // Since FREE Subscription Plan does not support '/convert' endpoint, api call should fail with error code 105
         ResponseEntity<ConvertResponseBean> responseEntity = restTemplate.getForEntity(uriConvert, ConvertResponseBean.class);
         Assert.assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
 
