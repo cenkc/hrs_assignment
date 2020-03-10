@@ -11,6 +11,7 @@ import org.springframework.web.util.UriComponentsBuilder;
  */
 public class CurrencyLayerApiTest {
 
+/*
     @Autowired
     private TestRestTemplate restTemplate;
 
@@ -31,4 +32,5 @@ public class CurrencyLayerApiTest {
                 .queryParam("format", 1);
         return builder.build().toUri().toASCIIString();
     }
+*/
 }

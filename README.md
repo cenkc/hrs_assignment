@@ -87,7 +87,7 @@ openjdk             8-jdk-alpine        a3562aa0b991        10 months ago       
 ```
 cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ docker run -p8081:8081 hrs-docker
 ```
-#if you get this error, then go to your IDE and stop the application and run above command again
+#if you get this error, make sure you killed all the instances of the application and run above command again
 ```
 docker: Error response from daemon: driver failed programming external connectivity on endpoint serene_wright (cc8359b52e8d72ecf706bed7b7a1846718e2074ca555cfd7a38aa80011a7f419): Error starting userland proxy: listen tcp 0.0.0.0:8081: bind: address already in use.
 ERRO[0000] error waiting for container: context canceled 
