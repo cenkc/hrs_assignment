@@ -27,30 +27,30 @@ curl -X POST \
 }'
 ```
 
-#Invoking the VAT lookup API via cURL command
+# Invoking the VAT lookup API via cURL command
 ```
 curl -X POST http://localhost:8081/api/vat/lookup -H 'Content-Type: application/json' -d '{"vatNumber": "LU20260743"}'
 ```
 
-#Invoking the current time API via cURL command
+# Invoking the current time API via cURL command
 ``` 
 curl -X GET http://localhost:8081/api/time/current
 ```
 
-#Dockerfile inside the project
+# Dockerfile inside the project
 ```
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
 ADD target/be-assignment-0.0.1-SNAPSHOT.jar hrs-app.jar
 ENTRYPOINT ["java","-jar","hrs-app.jar"]
 ```
-#check if docker installed
+# check if docker installed
 ```
 cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ docker --version
 Docker version 19.03.6, build 369ce74a3c
 ```
 
-#build container
+# build container
 ```
 cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ docker build -t hrs-docker .
 Sending build context to Docker daemon  50.97MB
@@ -75,7 +75,7 @@ Removing intermediate container b5d0b6e42f2b
 Successfully built 63230e413b88
 Successfully tagged hrs-docker:latest
 ```
-#list images
+# list images
 ```
 cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ docker image ls
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
@@ -83,17 +83,17 @@ hrs-docker         latest              63230e413b88        9 seconds ago       1
 openjdk             8-jdk-alpine        a3562aa0b991        10 months ago       105MB
 ```
 
-#run the container
+# run the container
 ```
 cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ docker run -p8081:8081 hrs-docker
 ```
-#if you get this error, then go to your IDE and stop the application and run above command again
+# if you get this error, then go to your IDE and stop the application and run above command again
 ```
 docker: Error response from daemon: driver failed programming external connectivity on endpoint serene_wright (cc8359b52e8d72ecf706bed7b7a1846718e2074ca555cfd7a38aa80011a7f419): Error starting userland proxy: listen tcp 0.0.0.0:8081: bind: address already in use.
 ERRO[0000] error waiting for container: context canceled 
 ```
 
-#run the container again
+# run the container again
 ```
 cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ docker run -p8081:8081 hrs-docker
   .   ____          _            __ _ _
@@ -110,7 +110,7 @@ cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ docker run -
 2020-03-10 10:35:38.623  INFO 1 --- [           main] c.c.h.b.BeAssignmentApplication          : Started BeAssignmentApplication in 10.14 seconds (JVM running for 10.967)
 ```
 
-#invoke /api/currency/convert endpoint
+# invoke /api/currency/convert endpoint
 ```
 cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ curl -X POST \
 >   http://localhost:8081/api/currency/convert \
@@ -123,13 +123,13 @@ cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ curl -X POST
 {"amount":4.36170,"sourceCurrency":"USD","targetCurrency":"EUR"}
 ```
 
-#invoke /api/vat/lookup endpoint
+# invoke /api/vat/lookup endpoint
 ```
 cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ curl -X POST http://localhost:8081/api/vat/lookup -H 'Content-Type: application/json' -d '{"vatNumber": "LU20260743"}'
 {"countryCode":"LU"}
 ```
 
-#invoke /api/time/current endpoint
+# invoke /api/time/current endpoint
 ```
 cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ curl localhost:8081/api/time/current
 {"currentTime":"2020-03-10 10:42:08.742 UTC Tue"}
