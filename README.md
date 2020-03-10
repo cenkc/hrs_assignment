@@ -134,3 +134,48 @@ cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ curl -X POST
 cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ curl localhost:8081/api/time/current
 {"currentTime":"2020-03-10 10:42:08.742 UTC Tue"}
 ```
+
+# docker-compose.yml inside the project
+```
+version: '2'
+
+services:
+  instance_1:
+    image: hrs-docker:latest
+    ports:
+      - "8081:8081"
+
+  instance_2:
+    image: hrs-docker:latest
+    ports:
+        - "8082:8081"
+
+  instance_3:
+    image: hrs-docker:latest
+    ports:
+        - "8083:8081"
+```
+
+# run
+``` 
+cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ docker-compose up
+
+Creating network "hrs_assignment-master_default" with the default driver
+Creating hrs_assignment-master_instance_1_1 ... done
+Creating hrs_assignment-master_instance_3_1 ... done
+Creating hrs_assignment-master_instance_2_1 ... done
+Attaching to hrs_assignment-master_instance_2_1, hrs_assignment-master_instance_1_1, hrs_assignment-master_instance_3_1
+...
+```
+
+# invoke /api/time/current endpoint over 3 different ports
+```
+cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ curl localhost:8081/api/time/current
+{"currentTime":"2020-03-10 22:01:55.489 UTC Tue"}
+
+cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ curl localhost:8082/api/time/current
+{"currentTime":"2020-03-10 22:02:01.663 UTC Tue"}
+
+cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ curl localhost:8083/api/time/current
+{"currentTime":"2020-03-10 22:02:05.062 UTC Tue"}
+```
