@@ -1,0 +1,5 @@
+com/cenkc/hrs/beassignment/CurrencyLayerApiTest.class
+com/cenkc/hrs/beassignment/controller/CurrencyConverterControllerTest.class
+com/cenkc/hrs/beassignment/config/RestTemplateConfigTest.class
+com/cenkc/hrs/beassignment/controller/VatLookupControllerTest.class
+com/cenkc/hrs/beassignment/BeAssignmentApplicationTests.class
