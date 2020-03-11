@@ -30,6 +30,12 @@ curl -X POST \
 # Invoking the VAT lookup API via cURL command
 ```
 curl -X POST http://localhost:8081/api/vat/lookup -H 'Content-Type: application/json' -d '{"vatNumber": "LU20260743"}'
+
+-- Some test numbers :
+-- SE556703748501 --> "CountryCode": "SE", "BusinessName": "Spotify AB"
+-- GB100534180 --> "CountryCode": "GB", "BusinessName": "ING FINANCE SOLUTION LTD"
+-- NL805734958B01 --> "CountryCode": "NL", "BusinessName": "BOOKING.COM B.V."
+
 ```
 
 # Invoking the current time API via cURL command
