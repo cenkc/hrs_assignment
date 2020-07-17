@@ -190,3 +190,5 @@ cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ curl localho
 cenkc@cenk-linux:~/devenv/workspaces/job/hrs/hrs_assignment-master$ curl localhost:8083/api/time/current
 {"currentTime":"2020-03-10 22:02:05.062 UTC Tue"}
 ```
+
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/cenkc/hrs_assignment?style=plastic)
