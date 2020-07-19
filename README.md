@@ -1,4 +1,5 @@
-# HRS Assignment : Invisible Pay Challenge: Backend Engineer [![HitCount](http://hits.dwyl.com/cenkc/hrs_assignment.svg)](http://hits.dwyl.com/cenkc/hrs_assignment)
+# HRS Assignment : Invisible Pay Challenge: Backend Engineer ![ViewCount](https://views.whatilearened.today/views/github/cenkc/hrs_assignment.svg)
+<!--[![HitCount](http://hits.dwyl.com/cenkc/hrs_assignment.svg)](http://hits.dwyl.com/cenkc/hrs_assignment)-->
 
 ## Running the application thru IntelliJ IDEA with Maven
 run `"mvn spring-boot:run"` command inside of a IntelliJ's built-in terminal
